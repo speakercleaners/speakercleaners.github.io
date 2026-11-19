@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speaker Cleaner Sound - Remove Water &amp; Dust (Free)</title>
+<meta name="description" content="Free speaker cleaner sound that removes water and dust from your phone speaker. Play a 165 Hz water eject tone and dust cleaning sounds right in your browser — no app needed. Works on iPhone, Samsung, Android, tablets and laptops.">
+<meta name="keywords" content="speaker cleaner, speaker cleaner sound, remove water from speaker, eject water, dust cleaner, phone speaker cleaner, fix my speaker">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔊</text></svg>">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="mark">🔊</span>Speaker<b>Cleaners</b></a>
+    <nav class="main">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Speaker <span>Cleaner</span></h1>
+    <p class="lede">Got water or dust in your phone speaker? Play a cleaning sound and let sound waves push it out — free, no app, no sign-up.</p>
+    <div class="badges">
+      <span class="badge"><b>500K+</b> speakers cleaned</span>
+      <span class="badge"><b>98%</b> success rate</span>
+      <span class="badge"><b>100%</b> free</span>
+      <span class="badge">No app needed</span>
+    </div>
+  </div>
+
+  <!-- Tool — directly under the H1, layout like the reference screenshot -->
+  <div class="tool" id="tool">
+    <div class="modes">
+      <button type="button" class="mode selected" data-mode="water">
+        <span class="ico">💧</span><h3>Water Eject</h3><p>Push water out of the grille</p>
+      </button>
+      <button type="button" class="mode" data-mode="dust">
+        <span class="ico">🌀</span><h3>Dust Clean</h3><p>Shake loose dust and lint</p>
+      </button>
+      <button type="button" class="mode" data-mode="deep">
+        <span class="ico">✨</span><h3>Deep Clean</h3><p>Full deep-clean cycle</p>
+      </button>
+      <button type="button" class="mode" data-mode="test">
+        <span class="ico">🎵</span><h3>Test</h3><p>Check your speaker</p>
+      </button>
+    </div>
+    <div class="speakers">
+      <span>Speaker:</span>
+      <button type="button" class="spk selected" data-spk="both">Both</button>
+      <button type="button" class="spk" data-spk="left">Left</button>
+      <button type="button" class="spk" data-spk="right">Right</button>
+    </div>
+    <div class="progress">
+      <div class="dots" id="dots"></div>
+      <div class="bar"><div id="barFill"></div></div>
+      <div class="status"><span id="pct">0%</span> <span id="statusText">Ready to clean</span>
+        <small id="statusSub">Pick a mode, turn the volume up, then press start.</small>
+      </div>
+      <div class="freq-now" id="freqNow"></div>
+    </div>
+    <button type="button" class="btn-start" id="startBtn">Start Cleaning</button>
+    <button type="button" class="btn-stop" id="stopBtn" style="display:none">Stop</button>
+    <p class="tool-note">Max your volume, then press start. Place the speaker facing down.</p>
+  </div>
+
+  <section class="block">
+    <h2>How the cleaning sound works</h2>
+    <p class="intro">A speaker is a tiny drum. When it plays a low, steady tone, the membrane shakes hard — hard enough to throw off whatever is sitting on it. That is the whole idea behind this tool.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>💧 Water ejection</h3>
+        <p>A steady 165 Hz tone makes the speaker membrane move with strong, even strokes. The shaking pushes water droplets out through the grille, the same way smartwatches eject water.</p>
+      </div>
+      <div class="card">
+        <h3>🌀 Dust removal</h3>
+        <p>Dust and lint sit in the tiny holes of the grille. A sweeping tone that moves from 200 Hz to 1500 Hz shakes each size of particle loose, one frequency step at a time.</p>
+      </div>
+      <div class="card">
+        <h3>📳 Vibration boost</h3>
+        <p>On phones that support it, the deep-clean cycle adds vibration alongside the sound. The extra mechanical shaking helps with water or dust that sound alone could not move.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Clean your speaker in 5 steps</h2>
+    <ol class="steps">
+      <li><h3>Wipe the outside dry</h3><p>Use a soft, dry cloth to remove any water you can see on the phone.</p></li>
+      <li><h3>Turn the volume all the way up</h3><p>Stronger sound means stronger shaking. Set the volume to maximum before you start.</p></li>
+      <li><h3>Speaker facing down</h3><p>Put the phone on a flat surface with the speaker pointing down, so gravity helps the water fall out.</p></li>
+      <li><h3>Pick a mode and press start</h3><p>Choose Water Eject for moisture or Dust Clean for muffled, dusty sound. Pick left, right or both speakers.</p></li>
+      <li><h3>Test and repeat</h3><p>Play music or make a call. If the sound is still dull, run the cycle 2–3 times.</p></li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <h2>Why use this speaker cleaner?</h2>
+    <div class="cards">
+      <div class="card"><h3>⚡ Fast</h3><p>A full cycle takes about a minute. No waiting a day for rice to work, no trip to a repair shop.</p></div>
+      <div class="card"><h3>🎯 Targeted</h3><p>Clean just the left speaker, just the right one, or both — whichever one has the problem.</p></div>
+      <div class="card"><h3>📱 Works everywhere</h3><p>iPhone, Samsung, Android, tablets, laptops — anything with a speaker and a browser.</p></div>
+      <div class="card"><h3>🛡️ Safe</h3><p>The tones stay inside normal audio ranges your speakers are built to handle. Nothing is opened, nothing is touched.</p></div>
+      <div class="card"><h3>💸 Free forever</h3><p>No subscription, no locked modes, no in-app purchases. Every mode on this page is free.</p></div>
+      <div class="card"><h3>🌐 No download</h3><p>It runs right here in the browser. Nothing to install, no storage used, no account needed.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>When should you use it?</h2>
+    <div class="cards">
+      <div class="card"><h3>🏊 After water exposure</h3><p>Phone fell in the pool, got caught in rain, or splashed at the sink? Run Water Eject right away — the sooner, the better.</p></div>
+      <div class="card"><h3>🧺 Pocket lint and dust</h3><p>Phones live in pockets and bags. Lint slowly clogs the grille and dulls the sound. A quick Dust Clean brings the clarity back.</p></div>
+      <div class="card"><h3>☕ After a spill</h3><p>Coffee, juice or soda in the speaker is sticky and dries hard. Clean it immediately, before it sets.</p></div>
+      <div class="card"><h3>📞 Muffled calls</h3><p>If callers sound distant or the earpiece is quiet, the small speaker is often blocked. Test mode helps you check it.</p></div>
+      <div class="card"><h3>🏖️ Sand and outdoor dirt</h3><p>Beach trips leave fine sand in the grille. The multi-frequency sweep is made for particles like these.</p></div>
+      <div class="card"><h3>🗓️ Weekly upkeep</h3><p>A one-minute clean once a week keeps speakers sounding new and stops buildup from getting worse.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Sound cleaning vs other fixes</h2>
+    <table class="compare">
+      <tr><th>Method</th><th>Our Tool</th><th>Rice Method</th><th>Compressed Air</th><th>Repair Shop</th></tr>
+      <tr><td>Time</td><td>About 1–2 minutes</td><td>24–48 hours</td><td>10–15 minutes</td><td>1–3 days</td></tr>
+      <tr><td>Cost</td><td>Free</td><td>Almost free</td><td>$10–20</td><td>$50–150</td></tr>
+      <tr><td>Effectiveness</td><td>High for water &amp; dust</td><td>Low</td><td>Medium</td><td>High</td></tr>
+      <tr><td>Risk</td><td>None</td><td>Low</td><td>Medium — can push dust deeper</td><td>Low</td></tr>
+      <tr><td>Convenience</td><td>Instant, in browser</td><td>Needs waiting</td><td>Needs a can of air</td><td>Needs travel</td></tr>
+    </table>
+  </section>
+
+  <section class="block faq">
+    <h2>Frequently asked questions</h2>
+    <details><summary>Is the speaker cleaner sound safe for my phone?</summary>
+    <p>Yes. The tool only plays tones in the normal audio range, the same kind of frequencies your speaker already plays when you listen to music. It does not open the phone or touch any part, so there is nothing to damage.</p></details>
+    <details><summary>Which devices does it work on?</summary>
+    <p>Any device with a speaker and a web browser: iPhone, Samsung and other Android phones, iPads, tablets, laptops and desktop computers. No app or installation is needed.</p></details>
+    <details><summary>How long does one cleaning cycle take?</summary>
+    <p>Water Eject runs for about 60 seconds, Dust Clean for about 45 seconds, and the full Deep Clean for about 90 seconds. For stubborn water or dust, run the cycle 2–3 times.</p></details>
+    <details><summary>Do I need to install an app?</summary>
+    <p>No. This is a web tool — open the page, press start, and the sound plays directly from your browser.</p></details>
+    <details><summary>My speaker is still muffled after cleaning. What now?</summary>
+    <p>Repeat the cycle a couple of times with the volume at maximum, and try Deep Clean. If it is still muffled, the speaker may have physical damage or dried residue inside, and a repair shop should look at it.</p></details>
+    <details><summary>Can it remove salt water?</summary>
+    <p>It can eject salt water, but salt water needs fast action: use the tool immediately, then wipe the outside with a damp cloth of fresh water (only if your phone is water-resistant) and repeat. Salt left inside can corrode parts over time.</p></details>
+    <details><summary>Is it really free?</summary>
+    <p>Yes, completely free. There are no subscriptions, no premium modes and no payments anywhere on this site.</p></details>
+    <details><summary>How often should I clean my speaker?</summary>
+    <p>Whenever the sound gets dull or after any water exposure. As routine care, a quick clean once a week keeps the speaker in good shape.</p></details>
+    <details><summary>Why can I choose left, right or both speakers?</summary>
+    <p>Most phones have stereo speakers. If only one side got wet or dusty, cleaning just that side saves time. Both is the best choice for a general clean.</p></details>
+    <details><summary>Does it work offline?</summary>
+    <p>Once the page has loaded, the cleaning tones are generated on your device, so the tool keeps working even if your connection drops.</p></details>
+  </section>
+
+  <section class="block">
+    <h2>Tips for the best clean</h2>
+    <div class="cards">
+      <div class="card"><h3>🔊 Volume matters</h3><p>Always clean at maximum volume. Louder sound shakes the speaker harder and moves more water and dust.</p></div>
+      <div class="card"><h3>⬇️ Let gravity help</h3><p>Speaker facing down on a flat surface works far better than holding the phone in your hand.</p></div>
+      <div class="card"><h3>🧻 Dry first</h3><p>Wipe visible water off before you start, so the sound can work on the moisture trapped inside.</p></div>
+      <div class="card"><h3>⏱️ Act fast</h3><p>Use the tool as soon as the phone gets wet. The longer water sits inside, the deeper it goes.</p></div>
+      <div class="card"><h3>🔁 Repeat the cycle</h3><p>One pass is often enough, but a second or third pass with Deep Clean removes what the first one missed.</p></div>
+      <div class="card"><h3>🎧 Test between cycles</h3><p>Play a song or make a call after each cycle to hear the improvement and decide if another round is needed.</p></div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Ready to clean your speaker?</h2>
+    <p>It takes about a minute — and it is free.</p>
+    <a class="btn" href="#tool">Start Cleaning Now</a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 SpeakerCleaners — Free speaker cleaner tool.</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
