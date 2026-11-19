@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://speakercleaners.github.io/sitemap.xml
